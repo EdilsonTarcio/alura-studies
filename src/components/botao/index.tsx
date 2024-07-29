@@ -1,10 +1,7 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React from "react";
-import style from './Botao.module.scss';
+import style from "./Botao.module.scss";
 
-class Botao extends React.Component {
-  render() {
-    return <button className={style.botao}>Botão</button>;
-  }
-}
-
-export default Botao;
+export default (props: { children: React.ReactNode }) => (
+  <button className={style.botao}>{props.children}</button>
+)
