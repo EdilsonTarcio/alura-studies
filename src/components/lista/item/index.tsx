@@ -1,6 +1,7 @@
+import { ITarefa } from '../../../types/tarefa'
 import style from '../lista.module.scss'
 
-export default function Item({tarefa, tempo}: {tarefa: string, tempo: string}) {
+export default function Item({tarefa, tempo, selecionado, completado, id}: ITarefa) {
     //desestruturação de props 
     return(
         <li className={style.item}>
