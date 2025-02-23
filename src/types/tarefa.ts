@@ -5,3 +5,7 @@ export interface ITarefa {
     completado: boolean,
     id: string
 }
+
+export interface Props extends ITarefa {
+    selecionaTarefa: (tarefaSelecionada: ITarefa) => void
+}
